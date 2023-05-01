@@ -31,6 +31,7 @@ export default {
                 this.states = states
             })
         },
+        // send patch req to database, update visited
         updateVisted(stateName, visited) {
             this.$stateService.setVisited(stateName, visited).then( () => {
                 this.fetchAllStates()

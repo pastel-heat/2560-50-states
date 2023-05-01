@@ -25,6 +25,7 @@ export default {
         }
     },
     methods: {
+        // when checkbox is clicked, emit msg to parent, update visited
         visitedChanged() {
             this.$emit('update-visited', this.state.name, this.visited)
         }
